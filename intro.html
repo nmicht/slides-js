@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Javascript | Desarrollo Web</title>
+
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Presentation -->
+      <section>
+        <h3>Desarrollo Web</h3>
+        <h2>Javascript</h2>
+        <h1>Introducción</h1>
+      </section>
+
+      <section id="index">
+        <h3>Indice</h3>
+        <ol>
+          <li><a href="#/intro">¿Qué es Javascript?</a></li>
+        </ol>
+      </section>
+
+      <!-- Que es -->
+      <section>
+        <section id="intro">
+          <h3>Javascript</h3>
+          <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        </section>
+        <section>
+          <h3>¿Qué es Javascript?</h3>
+        </section>
+        <section>
+           Es un lenguaje de programación interpretado, que se caracteriza como
+           orientado a objetos,​ basado en prototipos, imperativo, débilmente
+           tipado, dinámico y multi paradigma.
+        </section>
+        <section>
+          <h4>Interpretado</h4>
+          No requiere un compilador, la "traducción" se realiza durante la
+          ejecución.
+        </section>
+        <section>
+          <h4>Basado en prototipos</h4>
+           Es un estilo de programación orientada a objetos en el cual los
+           objetos no son creados mediante la instanciación de clases sino
+           mediante la clonación de otros objetos.
+           De esta forma los objetos ya existentes pueden servir de prototipos
+           para los que el programador necesite crear.
+        </section>
+        <section>
+          <h4>Imperativo</h4>
+          Describe la programación en términos del estado del programa y
+          sentencias que cambian dicho estado. Los programas imperativos son un
+          conjunto de instrucciones que le indican al computador cómo realizar
+          una tarea, de la misma manera que el modo imperativo en los lenguajes
+          naturales humanos le dice qué hacer al interlocutor.
+        </section>
+        <section>
+          <h4>Debilmente tipado</h4>
+          No tiene reglas forzosas con relación a los tipos de datos, por lo
+          cual no genera errores si los argumentos y variables utilizan tipos
+          no esperados.
+        </section>
+        <section>
+          <h4>Dinámico</h4>
+          En tiempo de ejecución, ejecuta muchos comportamientos de programación
+          comunes que los lenguajes de programación estáticos realizan durante
+          la compilación.
+          Estos comportamientos podrían incluir la extensión del programa,
+          agregando un código nuevo, extendiendo objetos y definiciones, o
+          modificando el tipo del sistema.
+        </section>
+      </section>
+
+      <section>
+        <a href="#">Ir al siguiente módulo</a>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+  // More info about config & dependencies:
+  // - https://github.com/hakimel/reveal.js#configuration
+  // - https://github.com/hakimel/reveal.js#dependencies
+  Reveal.initialize({
+    controls: false,
+    slideNumber: true,
+    dependencies: [
+      { src: 'reveal.js/plugin/markdown/marked.js' },
+      { src: 'reveal.js/plugin/markdown/markdown.js' },
+      { src: 'reveal.js/plugin/notes/notes.js', async: true },
+      { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
+  });
+  </script>
+</body>
+</html>
